@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8" />
+
+    <title>{% block title %}Développeur Web & Mobile Freelance | Pierre PORTEJOIE{% endblock %}</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/favicons/apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/favicons/apple-touch-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/favicons/apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/favicons/apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/favicons/apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/favicons/apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/favicons/apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/favicons/apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/favicons/apple-touch-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/favicons/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset('assets/favicons/android-chrome-192x192.png') }}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ asset('assets/favicons/favicon-96x96.png') }}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ asset('assets/favicons/favicon-16x16.png') }}" sizes="16x16">
+    <link rel="manifest" href="{{ asset('assets/favicons/manifest.json') }}">
+    <link rel="mask-icon" href="{{ asset('assets/favicons/safari-pinned-tab.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/favicons/favicon.ico') }}">
+    <!-- /favicon -->
+
+    <!-- stylesheets -->
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+    {% endblock %}
+    <!-- /stylesheets -->
+</head>
+<body>
+{% block body %}
+{% endblock %}
+
+{% block javascripts %}
+    <!-- json-ld -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "url": "http://pjoy.fr",
+        "logo": "{{ asset('assets/images/logo/pjoy-logo-xx.png')}}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lyon, France",
+            "postalCode":"69001",
+            "streetAddress": "29 quai Saint Vincent"
+        },
+        "description": "Développeur web indépendant sur Lyon. Je réalise vos projets web & mobile sur mesure. Possibilité audit, formation. Demandez un devis !",
+        "name": "Pierre PORTEJOIE, Développeur Freelance",
+        "telephone": "0686036143",
+        "email": "portejoiepierre@gmail.com",
+        "openingHours": [
+            "Mo-Fr 09:00-20:00",
+            "Sa 12:00-20:00",
+            "Su 18:00-20:00"
+        ],
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.7682939",
+            "longitude": "4.8257843"
+        },
+        "sameAs" : [
+            "https://www.facebook.com/freelanceweblyon/",
+            "https://plus.google.com/+PjoyFr",
+            "https://twitter.com/PJoy__",
+            "https://www.linkedin.com/in/pierre-portejoie"
+        ],
+        "founder":
+        {
+            "@type": "Person",
+            "name": "Pierre Portejoie",
+            "telephone": "+33686036143",
+            "email": "portejoiepierre@gmail.com",
+            "jobTitle": "freelance developper",
+            "image": "{{ asset('assets/images/photo/pierre_portejoie.png') }}"
+        }
+      }
+    </script>
+    <!-- /json-ld -->
+{% endblock %}
+</body>
 </html>
