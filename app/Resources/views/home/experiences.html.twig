@@ -1,0 +1,98 @@
+<section id="experiences">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Expérience</h2>
+                <hr>
+                <p class="lead"> Ici sont regroupées toutes mes expériences professionnelles, académiques et associatives. Vous pouvez masquer
+                    <span class="exp-third" onclick="showHideExperiences(this, 'exp-third')" onkeypress="showHideExperiences(this, 'exp-third')">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_11" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro">
+                            <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"></path>
+                            <circle cx="25" cy="25" r="6.25"></circle>
+                        </svg>
+                    </span>
+                    mes travaux associatifs et stages mineurs,
+                    <span class="exp-second" onclick="showHideExperiences(this, 'exp-second')" onkeypress="showHideExperiences(this, 'exp-second')">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_12" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro" >
+                            <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"></path>
+                            <circle cx="25" cy="25" r="6.25"></circle>
+                        </svg>
+                    </span>
+                    mes présentations et stages,
+                    <span class="exp-main" onclick="showHideExperiences(this, 'exp-main')" onkeypress="showHideExperiences(this, 'exp-main')">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_13" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro">
+                            <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"></path>
+                            <circle cx="25" cy="25" r="6.25"></circle>
+                        </svg>
+                    </span>
+                    mon parcours académique et professionnel.
+                </p>
+                <hr>
+                <div class="overflow-fix">
+
+                    {% for experience in experiences %}
+                    <div class="experience row exp-{{ experience.category }}">
+                        <div class="col-md-1 hidden-sm col-xs-2 main-exp-fix">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                    <rect x="21.875" width="6.25" height="800"></rect>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_1x" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
+                                    <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"></path>
+                                    <circle cx="25.205" cy="400.337" r="6.25"></circle>
+                                </svg>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-4">
+                            <h4>{{ experience.employer }}</h4>
+                            <p class="experience-period">{{ experience.start }}
+                                {% if experience.end is empty %}
+                                    - Actuel
+                                {% elseif experience.end != experience.start %}
+                                    - {{ experience.end }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
+                            <p>
+                                <strong>{{ experience.job }}</strong>
+                                <span class="hidden-xs">{{ experience.description }}</span>
+                                <br>
+                                {% if experience.place is empty and experience.website is empty %}
+                                {% elseif experience.place is empty %}
+                                <span class="experience-details">
+                                    <span class="link">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        <a href="{{ experience.link }}" target="_blank">{{ experience.website }}</a>
+                                    </span>
+                                </span>
+                                {% elseif experience.website is empty %}
+                                    <span class="experience-details">
+                                        <span class="location">
+                                            <span class="glyphicon glyphicon-map-marker"></span>{{ experience.place }}
+                                        </span>
+                                    </span>
+                                {% else %}
+                                    <span class="experience-details">
+                                        <span class="location">
+                                            <span class="glyphicon glyphicon-map-marker"></span>{{ experience.place }}
+                                        </span>
+                                        <span class="seperator">|</span>
+                                        <span class="link">
+                                            <span class="glyphicon glyphicon-link"></span>
+                                            <a href="{{ experience.link }}" target="_blank">{{ experience.website }}</a>
+                                        </span>
+                                    </span>
+                                {% endif %}
+                            </p>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <hr>
+                <p class="space">.</p>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+{
+  "Technologies Web" :
+  {
+    "Front End & Intégration" :
+    {
+      "HTML 5 / CSS 3" : 5,
+      "Javascript" : 5,
+      "JQuery" : 5,
+      "Adobe Photoshop" : 5,
+      "HTML 5 Canvas" : 5,
+      "Bootstrap Framework" : 4
+    },
+    "Back End" :
+    {
+      "Wordpress" : 5,
+      "Bash Scripting" : 5,
+      "PHP" : 4,
+      "MySQL" : 4,
+      "Symfony" : 4,
+      "Ruby / Python" : 3
+    }
+  },
+  "Informatique - Général" : {
+    "Systèmes d'exploitation" :
+    {
+      "Linux" : 5,
+      "OS X" : 5,
+      "Windows" : 3
+    },
+    "Divers" :
+    {
+      "Administration Système" : 5,
+      "Git / Git Flow" : 4,
+      "SEO (Référencement naturel)" : 4
+    },
+    "Programmation" :
+    {
+      "Bas Niveau (C)" : 5,
+      "C++" : 4,
+      "Java" : 4
+    },
+    "Autres Domaines" :
+    {
+      "Traitement d'Images" : 5,
+      "Réseaux" : 4,
+      "Télécoms": 2
+    }
+  }
+}
