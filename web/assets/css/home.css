@@ -647,7 +647,7 @@ footer .container {
 
 /** navbar **/
 
-.fixed .navbar {
+.fixed.navbar {
     position: fixed;
     top: 0px;
 }

@@ -146,7 +146,7 @@ function triggerSkillsAnim(e){
         jQuery('.navbar').toggle("slide");
     }
 }
-window.sr = new ScrollReveal({complete : function(e) {triggerSkillsAnim(e) }});
+window.sr = new scrollReveal({complete : function(e) {triggerSkillsAnim(e) }});
 $(function() {
     $('body').on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
