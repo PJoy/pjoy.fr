@@ -767,8 +767,11 @@ footer .container {
 /** tags **/
 
 #tag-container {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 3;
+    display: none;
 }
 
 .clickable {

@@ -1,3 +1,5 @@
+//if you're reading this, run while you can
+
 $(document).ready(function(){
     applyHeader();
     colorTheSkills();
@@ -168,4 +170,21 @@ $('body').scrollspy({
 
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+$('.clickable').hover(function(){
+    $(this).parent().children().css('font-size','x-small');
+    $(this).css('font-size','x-large');
+});
+
+var waypoint = new Waypoint({
+    element: document.getElementById('portfolio'),
+    handler: function(d){
+        var time = 500;
+        if (d == 'up') {
+            $('#tag-container').hide("slide", "right")
+        } else {
+            $('#tag-container').show("slide", "right")
+        }
+    }
 });
