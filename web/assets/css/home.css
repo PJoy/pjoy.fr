@@ -763,6 +763,87 @@ footer .container {
     }
 }
 
+
+/** tags **/
+
+#tag-container {
+    position: absolute;
+    z-index: 3;
+}
+
+.clickable {
+    cursor: pointer	;
+    transition-duration: 0.5s;
+}
+
+.clickable:hover {
+/*    font-size: xx-large;*/
+}
+
+.tag {
+    display: inline;
+    padding: .3em .6em .3em;
+    font-size: x-small;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.tag1,
+.tag2,
+.tag8{
+    background: #fff;
+}
+
+.tag3,
+.tag4,
+.tag7,
+.tag12{
+    background: #FECEA8;
+}
+
+.tag5{
+    background: #1C2227;
+}
+
+.tag6,
+.tag9{
+    background: #E84A5F;
+}
+
+.tag10,
+.tag11{
+    background: #FF847C;
+}
+
+.tag1 {
+    color: #FECEA8;
+}
+
+.tag4,
+.tag2 {
+    color: #FF847C;
+}
+
+.tag5,
+.tag7,
+.tag8 {
+    color: #E84A5F;
+}
+
+.tag6,
+.tag3,
+.tag10{
+    color: #fff;
+}
+
+.tag9,
+.tag12,
+.tag11 {
+    color: #1C2227;
+}
+
 /** h2 to p **/
 
 .space {
