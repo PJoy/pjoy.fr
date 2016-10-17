@@ -766,12 +766,13 @@ footer .container {
 
 /** tags **/
 
-#tag-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 3;
-    display: none;
+.clickable.solo {
+    /*border: solid 5px;*/
+    font-size: xx-large;
+}
+
+.clickable.muted {
+    opacity: 0.3;
 }
 
 .clickable {
@@ -786,65 +787,72 @@ footer .container {
 .tag {
     display: inline;
     padding: .3em .6em .3em;
-    font-size: x-small;
+    font-size: 75%;
     line-height: 2;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
 }
 
-.tag1,
-.tag2,
-.tag8{
+.tag.tag1,
+.tag.tag2,
+.tag.tag8{
     background: #fff;
 }
 
-.tag3,
-.tag4,
-.tag7,
-.tag12{
+.tag.tag3,
+.tag.tag4,
+.tag.tag7,
+.tag.tag12{
     background: #FECEA8;
 }
 
-.tag5{
+.tag.tag5{
     background: #1C2227;
 }
 
-.tag6,
-.tag9{
+.tag.tag6,
+.tag.tag9{
     background: #E84A5F;
 }
 
-.tag10,
-.tag11{
+.tag.tag10,
+.tag.tag11{
     background: #FF847C;
 }
 
-.tag1 {
+.tag.tag1 {
     color: #FECEA8;
 }
 
-.tag4,
-.tag2 {
+.tag.tag4,
+.tag.tag2 {
     color: #FF847C;
 }
 
-.tag5,
-.tag7,
-.tag8 {
+.tag.tag5,
+.tag.tag7,
+.tag.tag8 {
     color: #E84A5F;
 }
 
-.tag6,
-.tag3,
-.tag10{
+.tag.tag6,
+.tag.tag3,
+.tag.tag10{
     color: #fff;
 }
 
-.tag9,
-.tag12,
-.tag11 {
+.tag.tag9,
+.tag.tag12,
+.tag.tag11 {
     color: #1C2227;
+}
+
+.portfolio-images img{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    object-fit: cover;
 }
 
 /** h2 to p **/

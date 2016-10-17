@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e400e09-352d-478e-a5b7-8d3961f986e6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/jquery.waypoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/jquery.waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/noframework.waypoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/noframework.waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/infinite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/infinite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/inview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/inview.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/shortcuts/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/waypoints.debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/zepto.waypoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/lib/zepto.waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/waypoints/licenses.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/data/portfolio.csv" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/data/portfolio.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/home.css" afterPath="$PROJECT_DIR$/web/assets/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/homepage.js" afterPath="$PROJECT_DIR$/web/assets/js/homepage.js" />
     </list>
@@ -28,8 +53,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="97" column="48" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
+            <state relative-caret-position="313">
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="403">
-              <caret line="78" column="85" selection-start-line="78" selection-start-column="85" selection-end-line="78" selection-end-column="85" />
+              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -58,21 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="portfolio.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/css/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="773" column="18" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
+            <state relative-caret-position="538">
+              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -88,11 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/homepage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="186" column="52" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
+            <state relative-caret-position="727">
+              <caret line="212" column="15" selection-start-line="212" selection-start-column="15" selection-end-line="212" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/css/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="850" column="21" selection-start-line="850" selection-start-column="21" selection-end-line="850" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -124,11 +149,11 @@
         <option value="$PROJECT_DIR$/app/Resources/views/home/skills.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/home/header.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/data/portfolio.csv" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/web/assets/css/home.css" />
         <option value="$PROJECT_DIR$/web/assets/js/homepage.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/assets/css/home.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig" />
       </list>
     </option>
   </component>
@@ -565,12 +590,12 @@
       <updated>1475661467890</updated>
       <workItem from="1475661477774" duration="14679000" />
       <workItem from="1475852814618" duration="499000" />
-      <workItem from="1476367096118" duration="13334000" />
+      <workItem from="1476367096118" duration="21540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28512000" />
+    <option name="totallyTimeSpent" value="36718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -851,18 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/home/skills.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="97" column="48" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="78" column="85" selection-start-line="78" selection-start-column="85" selection-end-line="78" selection-end-column="85" />
+        <state relative-caret-position="585">
+          <caret line="39" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -878,34 +895,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/homepage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="727">
+          <caret line="212" column="15" selection-start-line="212" selection-start-column="15" selection-end-line="212" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/home/skills.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="403">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="773" column="18" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
+        <state relative-caret-position="193">
+          <caret line="850" column="21" selection-start-line="850" selection-start-column="21" selection-end-line="850" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/homepage.js">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/home/portfolio.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="186" column="52" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
+        <state relative-caret-position="538">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
           <folding />
         </state>
       </provider>

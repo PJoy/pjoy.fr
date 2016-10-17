@@ -1,5 +1,5 @@
 title;startY;endY;tags;images;shortdesc;description
-Chez Nestor;2016;2017;développement web front-end, développement web back-end;;Mission en tant qu'indépendant : le développement du site web d'une agence immobilière sur Lyon.;"Ma prestation a constitué :
+Chez Nestor;2016;2017;1,2;cheznestor/1.png,cheznestor/2.png,cheznestor/3.png;Mission en tant qu'indépendant : le développement du site web d'une agence immobilière sur Lyon.;"Ma prestation a constitué :
 
 A l'évaluation du niveau de technicité du site
 Au choix des technologies pour mener à bien le projet
@@ -7,7 +7,7 @@ A la conception de l'architecture technique du site web (Wordpress + php + javas
 Au développement puis déploiement du site web
 A la construction en maintien d'un niveau de sécurité suffisant pour le client ainsi que les utilisateurs de la plateforme web
 J'ai aussi déployé des compétences en SEO, UX, intégration de design graphique, administration système"
-Upsters;2015;2016;développement web front-end, développement web back-end;;Mon premier projet en tant que freelance. ;"Mon premier projet en tant que freelance. Il s'agit d'une plateforme sociale ayant pout but de rassembler les acteurs de l'entrepreneuriat, dans un premier temps en région lyonnaise.
+Upsters;2015;2016;1,2;upsters/1.png,upsters/2.png,upsters/3.png;Mon premier projet en tant que freelance. ;"Mon premier projet en tant que freelance. Il s'agit d'une plateforme sociale ayant pout but de rassembler les acteurs de l'entrepreneuriat, dans un premier temps en région lyonnaise.
 
 upsters.fr
 
@@ -18,25 +18,25 @@ Conception de l'architecture technique de la plateforme
 Au développement puis déploiement du site web
 A la construction en maintien d'un niveau de sécurité suffisant pour la plateforme web
 J'ai aussi déployé des compétences en gestion de projet, référencement naturel, intégration de design, administration système"
-Fractales;2014;2014;graphisme, développement créatif, traitement d’images, génération récursive;;Fractales sous photoshop;"Détails d'un poster grand format dont le graphisme a été réalisé à l'aide de l'outil script d'Adobe Photoshop.
+Fractales;2014;2014;3,4,5,9;fractales/1.png,fractales/2.png;Fractales sous photoshop;"Détails d'un poster grand format dont le graphisme a été réalisé à l'aide de l'outil script d'Adobe Photoshop.
 
 N'hésitez-pas à me contacter si la technique vous intéresse, je serai ravi d'en expliquer les détails. Vous pouvez télécharger le fichier complet ici (237 MB.)"
-Dégradation esthétique;2016;2016;développement créatif, traitement d’images;;Résultat de l'entrée de paramètres aléatoires dans mon projet de décomposition d'image.;"Image issue du résultat final d'un projet visant à replacer de façon itérative les parties d'une image en fonction de la moyenne des valeurs des pixels. (HTML5 Canvas + JS)
+Décomposition;2016;2016;4,5;degradation/1.png,degradation/2.gif,degradation/3.png;Résultat de l'entrée de paramètres aléatoires dans mon projet de décomposition d'image.;"Image issue du résultat final d'un projet visant à replacer de façon itérative les parties d'une image en fonction de la moyenne des valeurs des pixels. (HTML5 Canvas + JS)
 
 Le lien suivant mène résultat final, générant l'image en temps réel. (Il faut un peu de temps pour charger, le code n'est pas optimisé ! )"
-Monde infini;2016;;développement créatif, génération procédurale, jeu vidéo;;POKEMON;MAH POKAMN
-Moteur physique 2D;2014;2014;jeu vidéo, développement créatif;;moteur 2D js + canvas;"J'ai codé un moteur physique 2D en javascript + HTML5 Canvas pour une intégration web. Voir le projet.
+Monde Infini;2016;;4,6,7;;POKEMON;MAH POKAMN
+Moteur Physique 2D;2014;2014;4,7;moteur/1.gif,moteur/2.gif;moteur 2D js + canvas;"J'ai codé un moteur physique 2D en javascript + HTML5 Canvas pour une intégration web. Voir le projet.
 
 Vous pouvez modifier le code directement ici. Démonstration d'un mini-jeu utilisant cette bibliothèque."
-Projection interactive;2013;2013;développement embarqué, développement web back-end;;embedded;J'ai travaillé au développement d'un système de projection interactif pendant l'un de mes stages ingénieur.
-Plante synthétique;2014;2014;développement créatif, génération récursive;;"Expérimentation avec des fonctions récursives visant à la génération d'un arbre virtuel dans un navigateur web grâce à HTML5 Canvas.
+Projection Interactive;2013;2013;2,8;projection/1.png;embedded;J'ai travaillé au développement d'un système de projection interactif pendant l'un de mes stages ingénieur.
+Plante Synthétique;2014;2014;4,9;plante/1.gif;"Expérimentation avec des fonctions récursives visant à la génération d'un arbre virtuel dans un navigateur web grâce à HTML5 Canvas.
 ";"
 Les parties sont liées entre elles grâce à l'implémentation de lois mécaniques simples.
 
 Jetez-y un oeil ici. Vous pouvez aussi jouer avec le code javascript par là.
 
 La première version de l'idée permet de générer de plus nombreuses combinaisons."
-Recherche académique;2014;2015;recherche, traitement d’images, formation;;"Ce travail a été intégré au projet européen PIPER, rassemblant 10 partenaires dans 5 pays différents.
+Recherche Académique;2014;2015;5,10,11;recherche/1.png,recherche/2.png;"Ce travail a été intégré au projet européen PIPER, rassemblant 10 partenaires dans 5 pays différents.
 
 ";"Mon travail au laboratoire CREATIS a mené à une publication à la conférence internationale IEEE ICIP
 
@@ -45,9 +45,9 @@ Le papier proposait une nouvelle formulation pour la méthode de diffusion aniso
 L'application était le filtrage de scans IRM de cerveaux de patients atteints de sclérose en plaques.
 
 Télécharger la publication."
-PJoy;2014;;développement web front-end;;L'ancienne version de mon site web !;
-Recherches esthétiques diverses;2009;2015;graphisme, photographie, traitement d’images;;toshop;"Je joue depuis longtemps avec les outils qu'offre Adobe Photoshop dans une recherche d'estétique afin de m'en inspirer en développement créatif.
+PJoy;2014;;1,3;pjoy/1.png;L'ancienne version de mon site web !;
+Recherches Esthétiques Diverses;2009;2015;3,5;graph/1.png,graph/2.png,graph/3.png,graph/4.png ;toshop;"Je joue depuis longtemps avec les outils qu'offre Adobe Photoshop dans une recherche d'estétique afin de m'en inspirer en développement créatif.
 
 J'ai rassemblé les résultats de ces expérimentations dans différentes galleries : |1| |2| |3| |4| ."
-Enseignement jeu vidéo;2017;;formation, développement créatif, jeu vidéo;;jeu;vidéo
-Créations musicales;2012;2013;son;;du ONS;Vous pouvez écouter mes différents projets liés au son en cliquant les liens suivants : |1| |2| |3|
+Enseignement Jeu Vidéo;2017;;4,7,11;enseignement/1.png;jeu;vidéo
+Créations Musicales;2012;2013;12;son/1.jpg,son/2.jpg;du ONS;Vous pouvez écouter mes différents projets liés au son en cliquant les liens suivants : |1| |2| |3|

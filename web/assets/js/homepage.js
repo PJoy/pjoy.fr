@@ -172,19 +172,46 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$('.clickable').hover(function(){
-    $(this).parent().children().css('font-size','x-small');
-    $(this).css('font-size','x-large');
+$('#rz').click(function(){
+    $('.clickable').removeClass('solo');
+    $('.clickable').removeClass('muted');
+
+    toggleProjects()
 });
 
-var waypoint = new Waypoint({
-    element: document.getElementById('portfolio'),
-    handler: function(d){
-        var time = 500;
-        if (d == 'up') {
-            $('#tag-container').hide("slide", "right")
+$('.clickable').click(function(){
+    if ($(this).hasClass('solo')) {
+        $('.clickable').removeClass('muted', 500);
+        $(this).removeClass('solo', 500);
+        $(this).addClass('muted');
+    } else if ($(this).hasClass('muted')) {
+        if ($('.clickable').hasClass('solo')) {
+            $('.clickable.solo').removeClass('solo', 500);
+        }
+        $(this).removeClass('muted', 500);
+    } else {
+        if (!$('.clickable').hasClass('muted')){
+            $('.clickable').addClass('muted');
+            $(this).removeClass('muted', 500);
+            $(this).addClass('solo');
         } else {
-            $('#tag-container').show("slide", "right")
+            $(this).addClass('muted');
+            if ($('.clickable:not(.muted)').length == 1) $('.clickable:not(.muted)').addClass('solo');
         }
     }
+
+    toggleProjects();
 });
+
+function toggleProjects(){
+    $('.project-single').hide();
+    $('.clickable:not(.muted)').each(function(){
+        var tag = this;
+        $('.project-single').each(function(){
+            var a = $(this).attr("class").toString().split(' ');
+            var b = $(tag).attr("class").toString().split(' ');
+            if ($(b).not($(b).not(a)).length) $(this).show();
+
+        })
+    })
+}

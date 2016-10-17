@@ -9,7 +9,7 @@
                     n'<a href="#" onclick="showOnlyRes();return false;" onkeypress="showOnlyRes();return false;">afficher que mes travaux de recherche</a> ou mes expérimentations<a href="#" onclick="showOnlyCre();return false;" onkeypress="showOnlyCre();return false;">  en développement créatif et arts numériques.</a></p>
                 <hr>
                 <div class="row">
-                    <div id="tag-container" class="col-md-12 text-right">
+                    <div id="tag-container" class="col-md-12 text-center">
                         <h4>
                           {#  <span class="clickable tag tag1">{{ projectCats[1] }}</span><br>
                             <span class="clickable tag tag2">{{ projectCats[2] }}</span><br>
@@ -28,24 +28,28 @@
                             <span class="clickable tag tag10">{{ projectCats[10] }}</span><br>
                             <span class="clickable tag tag11">{{ projectCats[11] }}</span><br>#}
 
-                            <span class="clickable tag tag2">{{ projectCats[2] }}</span><br>
-                            <span class="clickable tag tag1">{{ projectCats[1] }}</span><br>
-                            <span class="clickable tag tag8">{{ projectCats[8] }}</span><br>
-                            <span class="clickable tag tag6">{{ projectCats[6] }}</span><br>
-                            <span class="clickable tag tag4">{{ projectCats[4] }}</span><br>
-                            <span class="clickable tag tag9">{{ projectCats[9] }}</span><br>
-                            <span class="clickable tag tag5">{{ projectCats[5] }}</span><br>
-                            <span class="clickable tag tag3">{{ projectCats[3] }}</span><br>
-                            <span class="clickable tag tag10">{{ projectCats[10] }}</span><br>
-                            <span class="clickable tag tag11">{{ projectCats[11] }}</span><br>
-                            <span class="clickable tag tag7">{{ projectCats[7] }}</span><br>
-                            <span class="clickable tag tag12">{{ projectCats[12] }}</span><br>
+                            <span class="clickable tag tag2">{{ projectCats[2] }}</span>
+                            <span class="clickable tag tag1">{{ projectCats[1] }}</span>
+                            <span class="clickable tag tag8">{{ projectCats[8] }}</span>
+                            <span class="clickable tag tag6">{{ projectCats[6] }}</span>
+                            <span class="clickable tag tag4">{{ projectCats[4] }}</span>
+                            <span class="clickable tag tag9">{{ projectCats[9] }}</span>
+                            <span class="clickable tag tag5">{{ projectCats[5] }}</span>
+                            <span class="clickable tag tag3">{{ projectCats[3] }}</span>
+                            <span class="clickable tag tag10">{{ projectCats[10] }}</span>
+                            <span class="clickable tag tag11">{{ projectCats[11] }}</span>
+                            <span class="clickable tag tag7">{{ projectCats[7] }}</span>
+                            <span class="clickable tag tag12">{{ projectCats[12] }}</span>
+
+                            <hr>
+
+                            <a id="rz"><span>RÀZ !</span></a>
                         </h4>
                     </div>
                 </div>
                 <hr>
                 {% for project in projects %}
-                        <div class="row">
+                        <div class="row project-single {% for tag in project.tags %} tag{{ tag }}{% endfor %}">
                             <div class="col-md-12 "><h3 class="text-left">{{ project.title }}
                                     {% if project.end is not empty and project.end > project.start %}
                                         ( {{ project.start }} - {{ project.end }} )
@@ -56,17 +60,24 @@
                             <div class="col-md-12">
                                 <h4>
                                     {% for tag in project.tags %}
-                                        <span class="tag">{{ tag }}</span><br>
+                                        <span class="tag tag{{ tag }}">{{ projectCats[tag] }}</span>
                                     {% endfor %}
                                 </h4>
                             </div>
-                        </div>
+                            <div class="col-md-12 col portfolio-images">
+                                {% for image in project.images %}
+                                    <div class="col-md-{{ 12 / (project.images|length) }}">
+                                        <img src="{{ asset('assets/images/projects/')~image }}">
+                                    </div>
+                                {% endfor %}
+                            </div>
                         <div class="row">
                             <div class="col-md-12">
                                 {{ project.shortdesc }}
                             </div>
                         </div>
                         <hr>
+                        </div>
                 {% endfor %}
                 <p class="space">.</p>
             </div>
