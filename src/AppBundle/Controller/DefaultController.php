@@ -64,12 +64,14 @@ class DefaultController extends Controller
             while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
                 $tags = explode(',',$data[3]);
                 $images = explode(',',$data[4]);
+                $ratios = explode(',',$data[7]);
                 array_push($projects,[
                     'title' => $data[0],
                     'start' => $data[1],
                     'end' => $data[2],
                     'tags' => $tags,
                     'images' => $images,
+                    'ratios' => $ratios,
                     'shortdesc' => $data[5],
                     'desc' => $data[6]
                 ]);

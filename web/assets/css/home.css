@@ -848,11 +848,35 @@ footer .container {
     color: #1C2227;
 }
 
-.portfolio-images img{
-    width: 150px;
-    height: 150px;
-    border-radius: 200px;
+.imjj{
+    /*width: 100%;*/
+    max-height: 400px;
     object-fit: cover;
+    filter: none
+}
+
+.imjj:hover{
+    filter: grayscale(100%);
+}
+
+.ratio11 {
+    width: 33%;
+    height: 100px;
+}
+
+.ratio12 {
+    width: 33%;
+    height: 200px;
+}
+
+.ratio21 {
+    width: 66%;
+    height: 100px;
+}
+
+.ratio22 {
+    width: 66%;
+    height: 200px;
 }
 
 /** h2 to p **/
