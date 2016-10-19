@@ -55,20 +55,16 @@
                             </div>
                         </div>
                 {% for image in project.images %}
+                <div class="parente col-md-4">
+                    <div class="containere">
                         <img src="{{ asset('assets/images/projects/')~image }}" class="imjj ratio{{ project.ratios[loop.index0] }}">
+                    </div>
+                    </div>
                 {% endfor %}
 
                     <hr class="hidden">
                 {% endfor %}
                 <p class="space">.</p>
-                <div class="col-md-3">OIHOIGOIG1<br></div>
-                <div class="col-md-6">OIHOIGOIG2<br>OIHOIGOIG<br>OIHOIGOIG<br>OIHOIGOIG<br></div>
-                <div class="col-md-3">OIHOIGOIG3</div>
-                <div class="col-md-3">OIHOIGOIG4</div>
-                <div class="col-md-3">OIHOIGOIG5</div>
-                <div class="col-md-3">OIHOIGOIG6</div>
-                <div class="col-md-3">OIHOIGOIG7</div>
-                <div class="col-md-3">OIHOIGOIG8</div>
             </div>
         </div>
     </div>
