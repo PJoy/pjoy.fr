@@ -225,6 +225,6 @@ $("#mason-container").mason({
     promoted: [
         ['mason-large', 2, 2],
         ['mason-tall', 1, 2],
-        ['mason-wide', 1, 2]
+        ['mason-wide', 2, 1]
     ]
 });

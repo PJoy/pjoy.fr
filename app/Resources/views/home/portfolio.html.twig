@@ -26,10 +26,17 @@
                     </div>
                 </div>
                 <hr>
+            </div>
+        </div>
+    </div>
+    <div class="totally-not-a-container">
+        <div class="row">
+            <div class="col-lg-12">
+
                 <div id="mason-container">
                     {% for project in projects %}
                         {% for image in project.images %}
-                            <div class="box {% if project.ratios[loop.index0] == 22 %}
+                            <div class="project-single {% for tag in project.tags %} tag{{ tag }}{% endfor %} box {% if project.ratios[loop.index0] == 22 %}
 mason-large
 {% elseif project.ratios[loop.index0] == 12 %}
 mason-wide
@@ -44,5 +51,12 @@ mason-tall
                 <p class="space">.</p>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div>
+        OIGOUVOUVOIVOI
     </div>
 </section>

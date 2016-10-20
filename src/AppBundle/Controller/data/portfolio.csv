@@ -23,11 +23,11 @@ Fractales;2014;2014;3,4,5,9;fractales/1.png,fractales/2.png;Fractales sous photo
 N'hésitez-pas à me contacter si la technique vous intéresse, je serai ravi d'en expliquer les détails. Vous pouvez télécharger le fichier complet ici (237 MB.)";12,21
 Décomposition;2016;2016;4,5;degradation/1.png,degradation/2.gif,degradation/3.png;Résultat de l'entrée de paramètres aléatoires dans mon projet de décomposition d'image.;"Image issue du résultat final d'un projet visant à replacer de façon itérative les parties d'une image en fonction de la moyenne des valeurs des pixels. (HTML5 Canvas + JS)
 
-Le lien suivant mène résultat final, générant l'image en temps réel. (Il faut un peu de temps pour charger, le code n'est pas optimisé ! )";11,11,11
+Le lien suivant mène résultat final, générant l'image en temps réel. (Il faut un peu de temps pour charger, le code n'est pas optimisé ! )";11,11,22
 Monde Infini;2016;;4,6,7;infini/pkmn.gif;POKEMON;MAH POKAMN;21
 Moteur Physique 2D;2014;2014;4,7;moteur/1.gif,moteur/2.gif;moteur 2D js + canvas;"J'ai codé un moteur physique 2D en javascript + HTML5 Canvas pour une intégration web. Voir le projet.
 
-Vous pouvez modifier le code directement ici. Démonstration d'un mini-jeu utilisant cette bibliothèque.";11,21
+Vous pouvez modifier le code directement ici. Démonstration d'un mini-jeu utilisant cette bibliothèque.";21,12
 Projection Interactive;2013;2013;2,8;projection/1.png;embedded;J'ai travaillé au développement d'un système de projection interactif pendant l'un de mes stages ingénieur.;11
 Plante Synthétique;2014;2014;4,9;plante/1.gif;Expérimentation avec des fonctions récursives visant à la génération d'un arbre virtuel dans un navigateur web grâce à HTML5 Canvas.;"
 Les parties sont liées entre elles grâce à l'implémentation de lois mécaniques simples.
@@ -45,6 +45,6 @@ Télécharger la publication.";11,11
 PJoy;2014;;1,3;pjoy/1.png;L'ancienne version de mon site web !;;11
 Recherches Esthétiques Diverses;2009;2015;3,5;graph/1.png,graph/2.png,graph/3.png,graph/4.png;toshop;"Je joue depuis longtemps avec les outils qu'offre Adobe Photoshop dans une recherche d'estétique afin de m'en inspirer en développement créatif.
 
-J'ai rassemblé les résultats de ces expérimentations dans différentes galleries : |1| |2| |3| |4| .";11,11,11,11
+J'ai rassemblé les résultats de ces expérimentations dans différentes galleries : |1| |2| |3| |4| .";11,22,12,21
 Enseignement Jeu Vidéo;2017;;4,7,11;enseignement/1.png;jeu;vidéo;11
 Créations Musicales;2012;2013;12;son/1.jpg,son/2.jpg;du ONS;Vous pouvez écouter mes différents projets liés au son en cliquant les liens suivants : |1| |2| |3|;11,11

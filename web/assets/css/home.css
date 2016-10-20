@@ -851,18 +851,23 @@ footer .container {
 .imjj{
     /*width: 100%;*/
     /*max-height: 400px;*/
-    object-fit: fill;
-    filter: none;
+    /*object-fit: fill;
+    filter: none;*/
     /*width: 100%;*/
+width: 300%;
+    transition:all 0.3s ease;
+
 }
 
 .imjj:hover{
-    filter: grayscale(100%);
+    width: 100%;
 }
 
 #mason-container {
     width: 100%;
     position: relative;
+
+    background: white;
 }
 .box {
     float: left;
@@ -871,9 +876,8 @@ footer .container {
 }
 
 .mason_filler {
-    display: none;
+    /*display: none;*/
 }
-
 
 /** h2 to p **/
 
