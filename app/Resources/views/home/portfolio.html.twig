@@ -26,44 +26,21 @@
                     </div>
                 </div>
                 <hr>
-                {% for project in projects %}
-                        <div class="row project-single {% for tag in project.tags %} tag{{ tag }}{% endfor %} hidden">
-                            <div class="col-md-12 "><h3 class="text-left">{{ project.title }}
-                                    {% if project.end is not empty and project.end > project.start %}
-                                        ( {{ project.start }} - {{ project.end }} )
-                                    {% else %}
-                                        ( {{ project.start }} )
-                                    {% endif %}
-                                </h3>
+                <div id="mason-container">
+                    {% for project in projects %}
+                        {% for image in project.images %}
+                            <div class="box {% if project.ratios[loop.index0] == 22 %}
+mason-large
+{% elseif project.ratios[loop.index0] == 12 %}
+mason-wide
+{% elseif project.ratios[loop.index0] == 21 %}
+mason-tall
+{% endif %}">
+                                <img src="{{ asset('assets/images/projects/')~image }}" class="imjj">
                             </div>
-                            <div class="col-md-12">
-                                <h4>
-                                    {% for tag in project.tags %}
-                                        <span class="tag tag{{ tag }}">{{ projectCats[tag] }}</span>
-                                    {% endfor %}
-                                </h4>
-                            </div>
-                            <div class="col-md-12 portfolio-images text-center">
-                                {% for image in project.images %}
-                                    <div class="col-md-{{ 12 / (project.images|length) }}">
-                                        <img src="{{ asset('assets/images/projects/')~image }}">
-                                    </div>
-                                {% endfor %}
-                            </div>
-                            <div class="col-md-12">
-                                {{ project.shortdesc }}
-                            </div>
-                        </div>
-                {% for image in project.images %}
-                <div class="parente col-md-4">
-                    <div class="containere">
-                        <img src="{{ asset('assets/images/projects/')~image }}" class="imjj ratio{{ project.ratios[loop.index0] }}">
-                    </div>
-                    </div>
-                {% endfor %}
-
-                    <hr class="hidden">
-                {% endfor %}
+                        {% endfor %}
+                    {% endfor %}
+                </div>
                 <p class="space">.</p>
             </div>
         </div>

@@ -215,3 +215,16 @@ function toggleProjects(){
         })
     })
 }
+
+$("#mason-container").mason({
+    itemSelector: ".box",
+    ratio: 1,
+    sizes: [
+        [1,1]
+    ],
+    promoted: [
+        ['mason-large', 2, 2],
+        ['mason-tall', 1, 2],
+        ['mason-wide', 1, 2]
+    ]
+});
